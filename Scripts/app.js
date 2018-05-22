@@ -55,7 +55,7 @@ let app = (function () {
 
         myArray.push( {name: "Carol", age: 15});
         myArray.unshift( {name: "Peter", age: 25});
-
+        myArray.push( {name: "Carol", age: 15});
 
         let content = document.getElementsByClassName("content");
         console.log(myArray);
