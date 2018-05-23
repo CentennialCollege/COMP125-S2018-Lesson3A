@@ -121,10 +121,27 @@ let app = (function () {
         console.log(myAssociateArray);
         console.log(myAssociateArray["Name"]);
 
-        for (const element of myAssociateArray) {
-            console.log(element);
-        }
+        let myFavouriteThingsList =[
+            "Video Games",
+            "Movies",
+            "Cars",
+            "Space Flight (FTL)"
+        ];
 
+
+
+        // "hook into" a ul that is empty that has an id of "myFavouriteThings"
+        let myFavouritesList = document.getElementById("myFavouriteThings");
+
+        myFavouriteThingsList.forEach(thing => {
+            let newItem = document.createElement("li");
+            newItem.textContent = thing;
+            myFavouritesList.appendChild(newItem);
+        });
+
+
+        
+        console.log(myFavouritesList);
     }
 
     function Start() {
